@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NIOP_Fitness
+namespace NIOP_Fitness.Forme
 {
-    public partial class Form1 : Form
+    public partial class Osoba : Form
     {
-        public Form1()
+        public Osoba()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
