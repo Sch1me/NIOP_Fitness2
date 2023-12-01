@@ -40,16 +40,19 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 122);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(16, 150);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(625, 290);
+            this.listBox1.Size = new System.Drawing.Size(832, 356);
             this.listBox1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 31);
+            this.button1.Location = new System.Drawing.Point(16, 38);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 40);
+            this.button1.Size = new System.Drawing.Size(145, 49);
             this.button1.TabIndex = 1;
             this.button1.Text = "Osoba";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,53 +60,62 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(179, 31);
+            this.button2.Location = new System.Drawing.Point(239, 38);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 40);
+            this.button2.Size = new System.Drawing.Size(144, 49);
             this.button2.TabIndex = 2;
             this.button2.Text = "Vjezba";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(676, 122);
+            this.button3.Location = new System.Drawing.Point(901, 150);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 3;
             this.button3.Text = "Pokreni";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(676, 251);
+            this.button4.Location = new System.Drawing.Point(901, 309);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 4;
             this.button4.Text = "Prekini";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(676, 389);
+            this.button5.Location = new System.Drawing.Point(901, 479);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 28);
             this.button5.TabIndex = 5;
             this.button5.Text = "Izmijeni";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 96);
+            this.textBox1.Location = new System.Drawing.Point(16, 118);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Treninzi";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -111,6 +123,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

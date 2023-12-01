@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NIOP_Fitness.Forme;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,30 @@ namespace NIOP_Fitness
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //osoba button
+            new Osoba().ShowDialog();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //vjezbe button
+            new Vjezbe().ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //pokreni button
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //prekini button
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //izmjeni button
         }
     }
 }

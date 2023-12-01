@@ -16,5 +16,28 @@ namespace NIOP_Fitness.Forme
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //dodaj vjezbu button
+            Close();
+            new DodavanjeVjezbe().ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //obrisi button
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //izmjeni button
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //nazad button
+            Close();
+        }
     }
 }

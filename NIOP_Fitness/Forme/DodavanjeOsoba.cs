@@ -16,5 +16,36 @@ namespace NIOP_Fitness.Forme
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //nazad button
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //dodaj osobu button
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //unesi ime textBox
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            //unesi prezime textBox
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            //unesi OIB textBox
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            //unesi godine textBNox
+        }
     }
 }
