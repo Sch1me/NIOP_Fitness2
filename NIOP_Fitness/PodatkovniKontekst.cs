@@ -9,9 +9,13 @@ namespace NIOP_Fitness
 {
     internal class PodatkovniKontekst
     {
-        public List<Osoba> osobe;
-        public List<Vjezbe> vjezbe;
-        public List<Trening> treninzi;
+        public List<OsobaModel> osobe;
+        public List<VjezbeModel> vjezbe;
+        public List<TreningModel> treninzi;
+
+
+        OsobaModel o = new OsobaModel();
+        VjezbeModel oV = new VjezbeModel();
 
     }
 }

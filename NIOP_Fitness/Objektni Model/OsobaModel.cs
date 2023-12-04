@@ -7,7 +7,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace NIOP_Fitness.Objektni_Model
 {
-    internal class Osoba : IComparable
+    internal class OsobaModel : IComparable
     {
         public string ime { get; set; }
         public string prezime { get; set;}
@@ -21,7 +21,7 @@ namespace NIOP_Fitness.Objektni_Model
         }
         public int CompareTo(object obj)
         {
-            int rez = this.prezime.CompareTo(((Osoba)obj).prezime);
+            int rez = this.prezime.CompareTo(((OsobaModel)obj).prezime);
             return rez;
         }
 

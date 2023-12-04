@@ -82,9 +82,9 @@
     <Compile Include="Forme\Vjezbe.Designer.cs">
       <DependentUpon>Vjezbe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Objektni Model\Osoba.cs" />
-    <Compile Include="Objektni Model\Trening.cs" />
-    <Compile Include="Objektni Model\Vjezbe.cs" />
+    <Compile Include="Objektni Model\OsobaModel.cs" />
+    <Compile Include="Objektni Model\TreningModel.cs" />
+    <Compile Include="Objektni Model\VjezbeModel.cs" />
     <Compile Include="PodatkovniKontekst.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

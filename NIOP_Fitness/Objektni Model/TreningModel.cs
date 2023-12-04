@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace NIOP_Fitness.Objektni_Model
 {
-    internal class Trening : IComparable
+    internal class TreningModel : IComparable
     {
-        Osoba osoba { get; set; }
-        Vjezbe vjezbe { get; set; }
+        OsobaModel osoba { get; set; }
+        VjezbeModel vjezbe { get; set; }
         public string opisTreninga { get; set; }
         public DateTime trajanjeTreninga { get; set; }
         public string nazivTreninga { get; set; }
@@ -22,7 +22,7 @@ namespace NIOP_Fitness.Objektni_Model
 
         public int CompareTo(object obj)
         {
-            int rez = nazivTreninga.CompareTo(((Trening)obj).nazivTreninga);
+            int rez = nazivTreninga.CompareTo(((TreningModel)obj).nazivTreninga);
             return rez;
         }
 

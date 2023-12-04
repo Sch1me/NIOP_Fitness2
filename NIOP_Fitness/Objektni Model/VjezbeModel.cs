@@ -7,7 +7,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace NIOP_Fitness.Objektni_Model
 {
-    internal class Vjezbe:IComparable
+    internal class VjezbeModel:IComparable
     {
         public string imeVjezbe { get; set; }
         public int brojPonavljanja { get; set; }
@@ -23,10 +23,10 @@ namespace NIOP_Fitness.Objektni_Model
 
         public int CompareTo(object obj)
         {
-            int rez = this.vrstaVjezbe.CompareTo(((Vjezbe)obj).vrstaVjezbe);
+            int rez = this.vrstaVjezbe.CompareTo(((VjezbeModel)obj).vrstaVjezbe);
             if (rez == 0)
             {
-                rez = this.imeVjezbe.CompareTo(((Vjezbe)obj).imeVjezbe);
+                rez = this.imeVjezbe.CompareTo(((VjezbeModel)obj).imeVjezbe);
                 return rez;
             }
             else
