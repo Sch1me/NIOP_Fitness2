@@ -1,8 +1,11 @@
-﻿using System;
+﻿using NIOP_Fitness.Objektni_Model;
+using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,13 +18,19 @@ namespace NIOP_Fitness.Forme
         public Vjezbe()
         {
             InitializeComponent();
+            PodatkovniKontekst podatkovniKontekstVjezbe = new PodatkovniKontekst();
+            if (podatkovniKontekstVjezbe.linijaVjezbe[0] !=null ) {
+                listBox1.Items.Add(podatkovniKontekstVjezbe.linijaVjezbe[0]);
+            }
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //dodaj vjezbu button
-            Close();
             new DodavanjeVjezbe().ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,6 +47,11 @@ namespace NIOP_Fitness.Forme
         {
             //nazad button
             Close();
+        }
+
+        public void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //lista, popis vjezbi
         }
     }
 }

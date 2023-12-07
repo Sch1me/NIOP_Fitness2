@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace NIOP_Fitness.Forme
 {
@@ -26,6 +27,17 @@ namespace NIOP_Fitness.Forme
         private void button1_Click(object sender, EventArgs e)
         {
             //dodaj osobu button
+            PodatkovniKontekst podatkovniKontekstOsoba = new PodatkovniKontekst();
+            if (textBox1 == null || textBox3 == null || textBox4 == null || textBox5 == null)
+            {
+                Console.WriteLine("Nisi unio sve");
+            }
+            else
+            {
+                String varijabla = $"{textBox1.Text} - {textBox3.Text} - {textBox4.Text} - {textBox5.Text}";
+                podatkovniKontekstOsoba.DodavanjeVjezbe(varijabla);
+            }
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
