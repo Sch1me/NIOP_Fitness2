@@ -22,20 +22,21 @@ namespace NIOP_Fitness.Forme
         {
             //nazad button
             Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //dodaj osobu button
             PodatkovniKontekst podatkovniKontekstOsoba = new PodatkovniKontekst();
-            if (textBox1 == null || textBox3 == null || textBox4 == null || textBox5 == null)
+            if (textBox1.Text.ToString()=="" || textBox3.Text.ToString()== ""|| textBox4.Text.ToString() == "" || textBox5.Text.ToString() == "")
             {
-                Console.WriteLine("Nisi unio sve");
+                MessageBox.Show("Nisi unio sve");
             }
             else
             {
                 String varijabla = $"{textBox1.Text} - {textBox3.Text} - {textBox4.Text} - {textBox5.Text}";
-                podatkovniKontekstOsoba.DodavanjeVjezbe(varijabla);
+                podatkovniKontekstOsoba.DodavanjeOsobe(varijabla);
             }
 
         }

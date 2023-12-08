@@ -17,7 +17,13 @@ namespace NIOP_Fitness.Forme
         {
 
             InitializeComponent();
-            
+
+            PodatkovniKontekst podatkovnikontekstOsobe = new PodatkovniKontekst();
+            IEnumerable<string> osobe = podatkovnikontekstOsobe.DohvacanjeOSoba();
+
+            foreach (string osoba in osobe) listBox1.Items.Add(osoba);
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

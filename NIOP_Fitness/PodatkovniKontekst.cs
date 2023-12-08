@@ -20,18 +20,45 @@ namespace NIOP_Fitness
         {
             
         }
+
+
+
 //funkcije koje koristimo za ubacivanje novih vjezbi i osoba
         public void DodavanjeVjezbe(String vjezba1)
         {
+            List<String> popisVjezbi = new List<string>();
+
+            StreamReader streamReaderVjezbe = new StreamReader("Popis Vjezbi.txt");
+            while(!streamReaderVjezbe.EndOfStream) {
+                popisVjezbi.Add(streamReaderVjezbe.ReadLine());
+            }
+            streamReaderVjezbe.Close();
+            
             StreamWriter streamWriterVjezbe = new StreamWriter("Popis Vjezbi.txt");
-            streamWriterVjezbe.WriteLine(vjezba1);
+            foreach (string a in popisVjezbi)
+            {
+                streamWriterVjezbe.WriteLine(a);
+            }
+            
             streamWriterVjezbe.Close();
         }
-        public void DodavanjeOsobe(OsobaModel osoba1)
+        public void DodavanjeOsobe(String osoba1)
         {
-
+            //cita iz datoteke i sprema u polje
+            List<String> popisOsoba = new List<string>();
+            StreamReader streamReaderOsoba = new StreamReader("Popis Osoba.txt");
+            while (!streamReaderOsoba.EndOfStream)
+            {
+                popisOsoba.Add(streamReaderOsoba.ReadLine());
+            }
+            streamReaderOsoba.Close();
+            //ispisuje iz iz polja u datoteteku
+            popisOsoba.Add(osoba1);
             StreamWriter streamWriterOsoba = new StreamWriter("Popis Osoba.txt");
-            streamWriterOsoba.WriteLine(osoba1);
+            foreach(string a in popisOsoba)
+            {
+                streamWriterOsoba.WriteLine(a);
+            }
             streamWriterOsoba.Close();
         }
         public void DodavanjeTreninga()
@@ -40,15 +67,20 @@ namespace NIOP_Fitness
         }
         public void CitanjeVjezbe()
         {
+            StreamReader streamReaderVjebze = new StreamReader("Popis Vjezbi.txt");
+            
+        }
+        public List<string> DohvacanjeOSoba()
+        {
             int i = 0;
-            String popisVjezbi;
-            StreamReader streamReaderVjezbe = new StreamReader("Popis Vjezbi.txt");
-            while (streamReaderVjezbe != null) { 
-                
-                popisVjezbi = streamReaderVjezbe.ReadLine();
-                linijaVjezbe.Add(popisVjezbi);
-
+            List<String> popisOsoba = new List<string>();
+            StreamReader streamReaderOsoba = new StreamReader ("Popis Osoba.txt");
+            while (!streamReaderOsoba.EndOfStream)
+            {
+                popisOsoba.Add(streamReaderOsoba.ReadLine());
             }
+            streamReaderOsoba.Close();
+            return popisOsoba;
         }
 
     }

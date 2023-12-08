@@ -39,7 +39,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(33, 80);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 369);
             this.button1.TabIndex = 0;
@@ -50,17 +50,18 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(341, 80);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(153, 22);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "Unesi ime vjezbe";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(341, 183);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(153, 22);
             this.textBox2.TabIndex = 5;
@@ -70,7 +71,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(341, 425);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(153, 22);
             this.textBox3.TabIndex = 6;
@@ -80,7 +81,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(341, 308);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(153, 22);
             this.textBox4.TabIndex = 7;
@@ -90,7 +91,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(869, 479);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(181, 60);
             this.button5.TabIndex = 8;
@@ -109,7 +110,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DodavanjeVjezbe";
             this.Text = "DodavanjeVjezbe";
             this.ResumeLayout(false);

@@ -30,7 +30,7 @@ namespace NIOP_Fitness.Forme
             PodatkovniKontekst podatkovniKontekstVjezbe = new PodatkovniKontekst();
             if(textBox1 == null || textBox2 == null || textBox3 == null || textBox3 == null)
             {
-                Console.WriteLine("Nisi unio sve");
+                MessageBox.Show("Nisi unio sve");
             }
             else {
                 String varijabla = $"{textBox1.Text} - {textBox2.Text} - {textBox4.Text} - {textBox3.Text}";
@@ -39,6 +39,10 @@ namespace NIOP_Fitness.Forme
             
         }
 
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //unesi ime vjezbe TextBox

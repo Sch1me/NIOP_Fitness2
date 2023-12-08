@@ -19,9 +19,9 @@ namespace NIOP_Fitness.Forme
         {
             InitializeComponent();
             PodatkovniKontekst podatkovniKontekstVjezbe = new PodatkovniKontekst();
-            if (podatkovniKontekstVjezbe.linijaVjezbe[0] !=null ) {
+           /* if (podatkovniKontekstVjezbe.linijaVjezbe[0] !=null ) {
                 listBox1.Items.Add(podatkovniKontekstVjezbe.linijaVjezbe[0]);
-            }
+            }*/
             
             
         }
